@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/activityhomeLinearLayout1"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            app:cardCornerRadius="10.0dip"
+            app:cardElevation="1.0dip"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:gravity="center|right"
+                android:background="@drawable/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp">
+                
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/serverList"
+                        android:layout_width="fill_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.0"
+                        android:popupBackground="#e0e0e0"/>
+                    
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+       
+						<Button
+                            android:focusable="true"
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+                            android:tint="#FFDA0A"
+                            android:layout_marginRight="8.0dip"
+							android:background="@drawable/ic_added"
+							android:onClick="add"/>
+
+						<Button
+							android:focusable="true"
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+                            android:tint="#FFDA0A"
+                            android:layout_marginRight="8.0dip"
+							android:background="@drawable/ic_edit"
+							android:onClick="edit"/>
+
+						<Button
+							android:focusable="true"
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+                            android:tint="#FFDA0A"
+							android:background="@drawable/ic_delete"
+							android:onClick="del"
+							android:layout_marginRight="8dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+        <LinearLayout
+            android:background="@drawable/hscard"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            app:cardCornerRadius="10.0dip"
+            app:cardElevation="1.0dip">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:onClick="addnotes">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="addnotes1">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Release Notes"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            android:layout_margin="10dp">
+        
+        <LinearLayout
+            android:background="@drawable/hscard"
+            android:visibility="visible"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"    
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            app:cardCornerRadius="15.0dip"
+            app:cardElevation="1.0dip">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:onClick="copyjson">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="copyjson">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Copy Json"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:background="@drawable/hscard"
+            android:visibility="visible"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            app:cardCornerRadius="15.0dip"
+            app:cardElevation="1.0dip">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:onClick="saveJson">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:onClick="saveJson">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save Json"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        
+        </LinearLayout>  
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"/>
+
+        <ScrollView
+            android:background="@drawable/card"
+            android:padding="5.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textColor="#000000"
+                android:textSize="10.0sp"
+                android:typeface="normal"
+                android:id="@+id/json"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:textIsSelectable="true"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
+

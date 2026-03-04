@@ -1,0 +1,53 @@
+plugins{
+	   id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 34
+    buildToolsVersion "34.0.4"
+    
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+    }
+    
+    defaultConfig {
+        applicationId "flyvpnpro.official.gen1"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 7
+        versionName "3.0.4"
+        multiDexEnabled false
+    }
+    
+    signingConfigs {
+        release {
+            storeFile file("../key/flyvpnpro.official78.jks")
+            storePassword 'flyvpnpro'
+            keyAlias 'flyvpnpro.official'
+            keyPassword 'flyvpnpro'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }  
+    namespace 'flyvpnpro.official.gen'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+	implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.github.angads25:filepicker:1.1.1'
+}

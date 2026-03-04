@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:aapt="http://schemas.android.com/aapt">
+                    
+       <group 
+          android:checkableBehavior="single">
+                
+         <item 
+             android:icon="@drawable/fb" 
+             android:id="@+id/hsfacebook" 
+             android:title="Facebook Group"/>
+                
+         <item 
+             android:icon="@drawable/tg" 
+             android:id="@+id/hstelegram" 
+             android:title="Telegram Group "/>
+       </group>     
+           
+       <group 
+          android:checkableBehavior="single">
+              
+          <item 
+              android:icon="@drawable/about" 
+              android:id="@+id/hsabout"
+              android:title="About"/>
+               
+          <item 
+              android:icon="@drawable/ic_exit" 
+              android:id="@+id/hsexit" 
+              android:title="Exit"/>
+                
+      </group> 
+  
+</menu>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/activitymainCoordinatorLayout1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+		<androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerlayout"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                    
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:id="@+id/main_layout"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+			    <androidx.appcompat.widget.Toolbar
+				    android:id="@+id/tool_bar"
+				    android:background="?attr/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="?attr/actionBarSize"
+                    android:layout_alignParentTop="true" >
+                        
+                   <LinearLayout
+                      android:orientation="horizontal"
+                      android:gravity="center"
+                      android:layout_centerInParent="true"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="fantasy"
+                         android:textColor="#FFFFFF"
+                         android:textSize="20sp"
+                         android:textStyle="bold"
+                         android:layout_marginLeft="-20dp"
+                         android:text="FLY GEN"/>
+
+                      <TextView
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:textColor="#FFDA0A"
+                         android:textStyle="bold"
+                         android:fontFamily="fantasy"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textSize="20sp"
+                         android:text=" PRO"/>
+
+                      </LinearLayout>
+
+                 </androidx.appcompat.widget.Toolbar>
+
+				   <include
+					  layout="@layout/activity_home" />
+                  
+				</LinearLayout>
+                
+                <com.google.android.material.navigation.NavigationView
+                    android:layout_gravity="start"
+                    android:id="@+id/nav_view"
+                    android:fitsSystemWindows="false"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nav_header_bg"
+                    app:headerLayout="@layout/nav_header"
+                    app:itemIconTint="#FFDA0A"
+                    app:itemTextColor="#FFFFFF"
+                    app:menu="@menu/navigation_menu">
+
+                   
+
+                </com.google.android.material.navigation.NavigationView>
+				
+		</androidx.drawerlayout.widget.DrawerLayout>
+                
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

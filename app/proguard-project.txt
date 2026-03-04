@@ -1,0 +1,19 @@
+-repackageclasses
+-ignorewarnings
+-dontnote
+-dontwarn
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+-dontoptimize
+-dontpreverify
+
+# Keep filenames and line numbers for stack traces
+#-keepattributes SourceFile,LineNumberTable
+
+# Code obfuscation
+-keepclassmembers class com.hs.gen.pro.** { <fields>; }
+
+-keep class com.hs.gen.pro.AESCrypt.** { *; }
+-keep class com.hs.gen.pro.MainActivity.** { *; }
+-keep class com.hs.gen.pro.dialog.ServerDialog.** { *; }

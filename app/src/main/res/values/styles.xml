@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+	
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/colorOpposite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+		<item name="alertDialogTheme">@style/AppAlertDialog</item>
+		<item name="android:windowAnimationStyle">@style/AppTheme.Animation</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+		<item name="android:navigationBarColor" tools:targetApi="21">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    
+	<style name="AppTheme.Animation">
+		<item name="android:windowEnterAnimation">@anim/abc_fade_in</item>
+		<item name="android:windowExitAnimation">@anim/abc_fade_out</item>
+	</style>
+    
+	<style name="AppAlertDialog"
+        parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:windowBackground">@color/colorAccent</item>
+		<item name="android:windowBackground">@drawable/eyesscodes</item>
+        <item name="android:windowMinWidthMajor">85%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+	</style>
+    
+    <!-- Toolbar theme -->
+    <style name="ToolbarTheme" 
+        parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="actionMenuTextColor">@android:color/holo_green_light</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="colorControlNormal">@color/colorOpposite</item>
+        <item name="colorControlActivated">@color/blue</item>
+        <item name="colorControlHighlight">@color/gray_light</item>
+    </style>
+	
+    <!-- Necessario para o modo noturno-->
+    <style name="AppTheme.AppBarOverlay" 
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    
+	<style name="AppTheme.PopupOverlay" 
+        parent="ThemeOverlay.AppCompat"/>
+    
+    <style name="ToolbarTitleTheme"
+        parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/colorOpposite</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="ToolbarSubtitleTheme" 
+        parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/colorOpposite</item>
+        <!-- Alert Dialog -->
+    </style>
+    
+	<style name="group">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        
+    </style>
+    
+</resources>

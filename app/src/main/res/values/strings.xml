@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PLUS GEN PRO</string>
+    <string name="hello_world">Hello, World!</string>
+    <string name="open">Open</string>
+    <string name="more">More</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

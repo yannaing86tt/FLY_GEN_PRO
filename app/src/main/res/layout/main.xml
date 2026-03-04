@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:ellipsize="marquee"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:scrollHorizontally="true"
+		android:singleLine="true"
+		android:text="Krypton is Here,Where are you! You Must Remember Who I am.😁"
+		android:textColor="#00FF03"
+		android:id="@+id/maintv"
+		android:shadowDx="3"
+		android:shadowColor="#ff0000"
+		android:shadowRadius="5"
+		android:shadowDy="3"
+		android:background="#000000"/>
+
+</LinearLayout>
