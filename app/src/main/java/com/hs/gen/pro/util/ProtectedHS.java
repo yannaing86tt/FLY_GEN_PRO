@@ -82,8 +82,8 @@ public class ProtectedHS {
   }*/
 
   public void simpleProtect() {
-    if (!APP_BASE.equals(mContext.getPackageName().toLowerCase())
-        || !mContext.getString(R.string.app_name).toLowerCase().equals(APP_NAME)) {
+    // Keep package validation only so rebranding app label won't crash app.
+    if (!APP_BASE.equals(mContext.getPackageName().toLowerCase())) {
       throw new RuntimeException();
     }
   }
