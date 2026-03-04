@@ -220,7 +220,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void AntiRemodHS(){
-        if (!(((String) getPackageManager().getApplicationLabel(getApplicationInfo())).equals(HSProtect.appname) && getPackageName().equals(HSProtect.pkgname))) {
+        // Keep package validation only, allow rebranded app label (PLUS GEN PRO)
+        if (!(getPackageName().equals(HSProtect.pkgname))) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setView(getLayoutInflater().inflate(R.layout.hsprotect,null));
             builder.setCancelable(false);
